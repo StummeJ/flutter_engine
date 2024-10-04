@@ -478,6 +478,8 @@ class AutofillInfo {
         element.id = autofillHint;
         if (autofillHint.contains('password')) {
           element.type = 'password';
+        } else if (autofillHint.contains('email')) {
+          element.type = 'email';
         } else {
           element.type = 'text';
         }
